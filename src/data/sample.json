@@ -1,0 +1,31 @@
+{
+  "user": "Jane Doe",
+  "timestamp": 1573256366,
+  "steps": [
+    {
+      "name": "Remove Screws",
+      "time": 15,
+      "result": "success"
+    },
+    {
+      "name": "Remove CPU Fan",
+      "time": 35,
+      "result": "success"
+    },
+    {
+      "name": "Remove Graphics Card",
+      "time": 13,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Power Supply",
+      "time": 57,
+      "result": "failure"
+    },
+    {
+      "name": "Install New Power Supply",
+      "time": null,
+      "result": "failure"
+    }
+  ]
+}
