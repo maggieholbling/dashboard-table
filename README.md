@@ -1,8 +1,16 @@
 # Dashboard Data Table
 
+#### Version 1
 Simple data table with a sorting functionality
 
 ![Table ordered by time, descending, with hover on a row](https://github.com/maggieholbling/dashboard-table/blob/master/docs/table2.png)
+
+#### Version 2 with pagination
+Table is populated with more sample data
+
+To view, switch to branch version-2: `git checkout version-2`
+
+![Table - version 2](https://github.com/maggieholbling/dashboard-table/blob/version-2/docs/table-version-2.png)
 
 ## Getting Started
 
