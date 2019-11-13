@@ -10,6 +10,7 @@ const Table = (props) => {
   });
 
   const [selectedPage, setSelectedPage] = useState(1);
+  const [maxEntries, setMaxEntries] = useState(2);
 
   //sorting data
   const data = () => {
@@ -49,8 +50,18 @@ const Table = (props) => {
     );
   };
 
-  //pagination
+  //last page calculation
+  const lastPage = () => {
+    return Math.ceil(data().steps.length / maxEntries);
+  };
 
+  //displaying certain number entries based on the allowed max entries per page and selected page #
+  const capSteps = (maxEntriesPerPage) => {
+    return data().steps.slice(
+      maxEntriesPerPage * (selectedPage - 1),
+      maxEntriesPerPage * selectedPage
+    );
+  };
 
   return (
     <>
@@ -66,7 +77,7 @@ const Table = (props) => {
           </tr>
         </thead>
         <tbody>
-          {data().steps.map(step => (
+          {capSteps(maxEntries).map(step => (
             <tr>
               <td>{data().user ? data().user : "-"}</td>
               <td>{data().timestamp ? data().timestamp : "-"}</td>
@@ -80,7 +91,7 @@ const Table = (props) => {
       </table>
       <Pagination
         selectedPage={selectedPage}
-        lastPage={8}
+        lastPage={lastPage()}
         onChange={setSelectedPage}
       />
     </>
