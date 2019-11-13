@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import SortButton from './SortButton';
+import sortSteps from '../helpers/sortingData';
 
 const Table = (props) => {
   const [orderBy, setOrderBy] = useState({
@@ -7,53 +8,26 @@ const Table = (props) => {
     isAsc: true
   });
 
-  //sorting steps array based on state & its data type
-  const sortSteps = (data, sortValue) => {
-
-    return data.steps.sort((a, b) => {
-
-      //for strings
-      if (typeof a[sortValue] === 'string') {
-        let aSortField = a[sortValue].toLowerCase();
-        let bSortField = b[sortValue].toLowerCase();
-
-        if (aSortField > bSortField) {
-          return orderBy.isAsc ? 1 : -1;
-        }
-        if (aSortField < bSortField) {
-          return orderBy.isAsc ? -1 : 1;
-        }
-        return 0;
-
-      //for numbers and possible booleans
-      } else {
-        
-        if (orderBy.isAsc) {
-          return Number(a[sortValue]) - Number(b[sortValue]);
-        }
-        return Number(b[sortValue]) - Number(a[sortValue]);
-      }
-    });
-
-  };
-
+  
+  //sorting data
   const data = () => {
     
     //setting order field
     let data =
       {...props.data, steps:
         props.data.steps.map((step, i) => {
-          return { ...step, order: i };
+          return { ...step, order: i + 1 };
         })
       };
     
     const sortValue = orderBy.columnName.toLowerCase();
 
-    sortSteps(data, sortValue);
+    sortSteps(data, sortValue, orderBy.isAsc);
 
     return data;
   };
 
+  //making sortable header fields
   const headerField = (name) => {
     return (
       <th>
@@ -91,12 +65,12 @@ const Table = (props) => {
       <tbody>
         {data().steps.map(step => (
           <tr>
-            <td>{data().user}</td>
-            <td>{data().timestamp}</td>
+            <td>{data().user ? data().user : "-"}</td>
+            <td>{data().timestamp ? data().timestamp : "-"}</td>
             <td>{step.order}</td>
-            <td>{step.name}</td>
-            <td>{step.time}</td>
-            <td>{step.result}</td>
+            <td>{step.name ? step.name : "-"}</td>
+            <td>{step.time ? step.time : "-"}</td>
+            <td>{step.result ? step.result : "-"}</td>
           </tr>
         ))}
       </tbody>
