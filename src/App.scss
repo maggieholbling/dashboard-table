@@ -1,3 +1,10 @@
 @import 'styles/config';
 @import 'styles/table';
 @import 'styles/sort-button';
+
+body {
+ display: flex;
+ justify-content: center;
+ padding: 20px;
+ background-color: $dark-color;
+}

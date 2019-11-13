@@ -1,5 +1,11 @@
+.fas.fa-sort-down, .fas.fa-sort-up{
+  color: white;
+  font-size: 17px;
+  padding: 5px;
+}
+
 .fas.fa-sort-down.unselected {
-  color: lighten( $dark-color, 60% );
+  color: $main-color;
 }
 
 .sort {
