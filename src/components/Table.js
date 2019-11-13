@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import SortButton from './SortButton';
+import Pagination from './Pagination';
 import sortSteps from '../helpers/sortingData';
 
 const Table = (props) => {
@@ -8,10 +9,10 @@ const Table = (props) => {
     isAsc: true
   });
 
-  
+  const [selectedPage, setSelectedPage] = useState(1);
+
   //sorting data
   const data = () => {
-    
     //setting order field
     let data =
       {...props.data, steps:
@@ -21,9 +22,7 @@ const Table = (props) => {
       };
     
     const sortValue = orderBy.columnName.toLowerCase();
-
     sortSteps(data, sortValue, orderBy.isAsc);
-
     return data;
   };
 
@@ -50,31 +49,41 @@ const Table = (props) => {
     );
   };
 
+  //pagination
+
+
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>User</th>
-          <th>Timestamp</th>
-          {headerField('Order')}
-          {headerField('Name')}
-          {headerField('Time')}
-          {headerField('Result')}
-        </tr>
-      </thead>
-      <tbody>
-        {data().steps.map(step => (
+    <>
+      <table>
+        <thead>
           <tr>
-            <td>{data().user ? data().user : "-"}</td>
-            <td>{data().timestamp ? data().timestamp : "-"}</td>
-            <td>{step.order}</td>
-            <td>{step.name ? step.name : "-"}</td>
-            <td>{step.time ? step.time : "-"}</td>
-            <td>{step.result ? step.result : "-"}</td>
+            <th>User</th>
+            <th>Timestamp</th>
+            {headerField('Order')}
+            {headerField('Name')}
+            {headerField('Time')}
+            {headerField('Result')}
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {data().steps.map(step => (
+            <tr>
+              <td>{data().user ? data().user : "-"}</td>
+              <td>{data().timestamp ? data().timestamp : "-"}</td>
+              <td>{step.order}</td>
+              <td>{step.name ? step.name : "-"}</td>
+              <td>{step.time ? step.time : "-"}</td>
+              <td>{step.result ? step.result : "-"}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <Pagination
+        selectedPage={selectedPage}
+        lastPage={5}
+        onChange={setSelectedPage}
+      />
+    </>
   );
 };
 
