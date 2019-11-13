@@ -4,11 +4,11 @@ const Button = (props) => {
 
   const ascOrDesc = () => {
     if (props.selected && props.isAsc) {
-      return <i class="fas fa-sort-down"></i>;
+      return <i className="fas fa-sort-down"></i>;
     } else if (props.selected && !props.isAsc) {
-      return <i class="fas fa-sort-up"></i>;
+      return <i className="fas fa-sort-up"></i>;
     } else {
-      return <i class="fas fa-sort-down unselected"></i>;
+      return <i className="fas fa-sort-down unselected"></i>;
     }
   };
   

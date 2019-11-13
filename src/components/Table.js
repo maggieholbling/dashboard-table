@@ -80,7 +80,7 @@ const Table = (props) => {
       </table>
       <Pagination
         selectedPage={selectedPage}
-        lastPage={5}
+        lastPage={8}
         onChange={setSelectedPage}
       />
     </>

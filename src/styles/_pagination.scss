@@ -1,18 +1,46 @@
 .pagination {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 20px;
+}
+
+.fas.fa-angle-right, .fas.fa-angle-left {
+  font-size: 18px;
+  padding: 5px;
+  color: white;
+}
+
+.fas.fa-angle-right.active, .fas.fa-angle-left.active {
+  &:hover {
+    color: $main-color;
+    cursor: pointer;
+  }
 }
 
 .page-butn {
   border: none;
+  width: 30px;
   outline: none;
   color: white;
   background: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 900;
   font-size: 17px;
+  margin: 2px;
+
+  &:hover {
+    color: $main-color;
+    cursor: pointer;
+  }
 }
 
 .selected {
   border-radius: 5px;
   background-color: $darker-main-color;
+
+  &:hover {
+    color: white;
+    cursor: default;
+  }
 }
