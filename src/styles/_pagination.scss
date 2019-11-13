@@ -1,8 +1,9 @@
 .pagination {
+  margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .fas.fa-angle-right, .fas.fa-angle-left {
@@ -43,4 +44,36 @@
     color: white;
     cursor: default;
   }
+}
+
+.pagination::before {
+  content:"";
+  visibility: hidden;
+  width: 200px;
+}
+
+.pag-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  width: 200px;
+}
+
+.pag-label {
+  color: white;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+}
+
+.pag-input {
+  width: 25px;
+  padding: 2px 5px;
+  margin: 0 0 0 5px;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid $darker-main-color;
+  color: white;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
 }

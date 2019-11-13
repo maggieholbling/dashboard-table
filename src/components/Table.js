@@ -93,6 +93,8 @@ const Table = (props) => {
         selectedPage={selectedPage}
         lastPage={lastPage()}
         onChange={setSelectedPage}
+        setMaxEntries={setMaxEntries}
+        maxEntries={maxEntries}
       />
     </>
   );
