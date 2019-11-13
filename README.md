@@ -2,6 +2,8 @@
 
 Simple data table with a sorting functionality
 
+![Table ordered by time, descending, with hover on a row](https://github.com/maggieholbling/dashboard-table/blob/master/docs/table2.png)
+
 ## Getting Started
 
 1. To install dependencies, run: `npm install`
