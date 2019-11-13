@@ -70,6 +70,282 @@
       "name": "Install New Battery",
       "time": null,
       "result": "failure"
+    },
+    {
+      "name": "Remove Screws",
+      "time": 15,
+      "result": "success"
+    },
+    {
+      "name": "Remove CPU Fan",
+      "time": 35,
+      "result": "success"
+    },
+    {
+      "name": "Remove Graphics Card",
+      "time": 13,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Battery",
+      "time": 7,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Hard Drive",
+      "time": 18,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Speakers",
+      "time": 20,
+      "result": "failure"
+    },
+    {
+      "name": "Remove Old Wifi Adapter",
+      "time": 24,
+      "result": "success"
+    },{
+      "name": "Remove Old Antennas",
+      "time": 10,
+      "result": "failure"
+    },
+    {
+      "name": "Remove Old Bluetooth Adapter",
+      "time": 24,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Power Supply",
+      "time": 57,
+      "result": "failure"
+    },
+    {
+      "name": "Remove Old Screen",
+      "time": 8,
+      "result": "success"
+    },
+    {
+      "name": "Install new screen",
+      "time": 60,
+      "result": "failure"
+    },
+    {
+      "name": "Install New Power Supply",
+      "time": null,
+      "result": "failure"
+    },
+    {
+      "name": "Install New Battery",
+      "time": null,
+      "result": "failure"
+    },
+    {
+      "name": "Remove Screws",
+      "time": 15,
+      "result": "success"
+    },
+    {
+      "name": "Remove CPU Fan",
+      "time": 35,
+      "result": "success"
+    },
+    {
+      "name": "Remove Graphics Card",
+      "time": 13,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Battery",
+      "time": 7,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Hard Drive",
+      "time": 18,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Speakers",
+      "time": 20,
+      "result": "failure"
+    },
+    {
+      "name": "Remove Old Wifi Adapter",
+      "time": 24,
+      "result": "success"
+    },{
+      "name": "Remove Old Antennas",
+      "time": 10,
+      "result": "failure"
+    },
+    {
+      "name": "Remove Old Bluetooth Adapter",
+      "time": 24,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Power Supply",
+      "time": 57,
+      "result": "failure"
+    },
+    {
+      "name": "Remove Old Screen",
+      "time": 8,
+      "result": "success"
+    },
+    {
+      "name": "Install new screen",
+      "time": 60,
+      "result": "failure"
+    },
+    {
+      "name": "Install New Power Supply",
+      "time": null,
+      "result": "failure"
+    },
+    {
+      "name": "Install New Battery",
+      "time": null,
+      "result": "failure"
+    },
+    {
+      "name": "Remove Screws",
+      "time": 15,
+      "result": "success"
+    },
+    {
+      "name": "Remove CPU Fan",
+      "time": 35,
+      "result": "success"
+    },
+    {
+      "name": "Remove Graphics Card",
+      "time": 13,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Battery",
+      "time": 7,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Hard Drive",
+      "time": 18,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Speakers",
+      "time": 20,
+      "result": "failure"
+    },
+    {
+      "name": "Remove Old Wifi Adapter",
+      "time": 24,
+      "result": "success"
+    },{
+      "name": "Remove Old Antennas",
+      "time": 10,
+      "result": "failure"
+    },
+    {
+      "name": "Remove Old Bluetooth Adapter",
+      "time": 24,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Power Supply",
+      "time": 57,
+      "result": "failure"
+    },
+    {
+      "name": "Remove Old Screen",
+      "time": 8,
+      "result": "success"
+    },
+    {
+      "name": "Install new screen",
+      "time": 60,
+      "result": "failure"
+    },
+    {
+      "name": "Install New Power Supply",
+      "time": null,
+      "result": "failure"
+    },
+    {
+      "name": "Install New Battery",
+      "time": null,
+      "result": "failure"
+    },
+    {
+      "name": "Remove Screws",
+      "time": 15,
+      "result": "success"
+    },
+    {
+      "name": "Remove CPU Fan",
+      "time": 35,
+      "result": "success"
+    },
+    {
+      "name": "Remove Graphics Card",
+      "time": 13,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Battery",
+      "time": 7,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Hard Drive",
+      "time": 18,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Speakers",
+      "time": 20,
+      "result": "failure"
+    },
+    {
+      "name": "Remove Old Wifi Adapter",
+      "time": 24,
+      "result": "success"
+    },{
+      "name": "Remove Old Antennas",
+      "time": 10,
+      "result": "failure"
+    },
+    {
+      "name": "Remove Old Bluetooth Adapter",
+      "time": 24,
+      "result": "success"
+    },
+    {
+      "name": "Remove Old Power Supply",
+      "time": 57,
+      "result": "failure"
+    },
+    {
+      "name": "Remove Old Screen",
+      "time": 8,
+      "result": "success"
+    },
+    {
+      "name": "Install new screen",
+      "time": 60,
+      "result": "failure"
+    },
+    {
+      "name": "Install New Power Supply",
+      "time": null,
+      "result": "failure"
+    },
+    {
+      "name": "Install New Battery",
+      "time": null,
+      "result": "failure"
     }
   ]
 }

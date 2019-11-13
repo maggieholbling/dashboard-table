@@ -10,7 +10,7 @@ const Table = (props) => {
   });
 
   const [selectedPage, setSelectedPage] = useState(1);
-  const [maxEntries, setMaxEntries] = useState(2);
+  const [maxEntries, setMaxEntries] = useState(10);
 
   //sorting data
   const data = () => {
